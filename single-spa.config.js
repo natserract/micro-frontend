@@ -1,25 +1,26 @@
-import { registerApplication, start } from 'single-spa'
+import { registerApplication, start, declare, triggerAppChange } from 'single-spa'
 
 registerApplication(
   // Name of our single-spa application
-  'user',
+  'react',
   // loadingFunction
-  () => import('./src/user/user.app.js'),
+  () => import('./src/@app.micro-react/index.react.js'),
   // activityFunction
   (location) => location.pathname === "" || 
     location.pathname === "/" || 
-    location.pathname.startsWith('/user')
+    location.pathname.startsWith('/react')
 );
 
 registerApplication(
     // Name of our single-spa application
-    'admin',
+    'vue',
     // loadingFunction
-    () => import('./src/admin/admin.app.js'),
+    () => import('./src/@app.micro-vue/index.vue.js'),
     // activityFunction
     (location) => location.pathname === "" || 
       location.pathname === "/" || 
-      location.pathname.startsWith('/admin')
+      location.pathname.startsWith('/vue')
   );
 
 start();
+triggerAppChange()

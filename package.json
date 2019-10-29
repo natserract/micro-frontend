@@ -30,18 +30,26 @@
     "@types/node": "^12.11.7",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.9.3",
+    "@types/react-redux": "^7.1.5",
+    "@types/redux": "^3.6.0",
+    "@types/styled-components": "^4.1.20",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-redux": "^7.1.1",
     "react-router-dom": "^5.1.2",
     "react-transition-group": "^4.3.0",
+    "redux": "^4.0.4",
     "single-spa": "^4.4.1",
     "single-spa-react": "^2.10.3",
     "single-spa-vue": "^1.5.4",
     "source-map-loader": "^0.2.4",
+    "styled-components": "^4.4.0",
     "ts-loader": "^6.2.1",
     "typescript": "^3.6.4",
     "vue": "^2.6.10",
     "vue-loader": "^15.7.1",
-    "vue-template-compiler": "^2.6.10"
+    "vue-styled-components": "^1.4.13",
+    "vue-template-compiler": "^2.6.10",
+    "vuejs-redux": "^2.4.1"
   }
 }

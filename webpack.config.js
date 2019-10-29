@@ -45,7 +45,7 @@ module.exports = {
             vue: 'vue/dist/vue.js'
         },
         modules: [path.resolve(__dirname, 'node_modules')],
-        extensions: [".tsx", ".ts", ".js"]
+        extensions: [".tsx", ".ts", ".js", ".vue"]
     },
     plugins: [
         // A webpack plugin to remove/clean the output folder before building
