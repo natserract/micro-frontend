@@ -1,17 +1,5 @@
 <template>
   <div>
-    asdas
-    <Header />
+      <h1>Hello from Vue</h1>
   </div>
 </template>
-
-
-<script>
-import Header from "./component/header.component";
-
-export default {
-  components: {
-    Header
-  },
-};
-</script>

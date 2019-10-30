@@ -1,4 +1,11 @@
-import { registerApplication, start, declare, triggerAppChange } from 'single-spa'
+import { registerApplication, start } from 'single-spa'
+
+
+registerApplication(
+  'vue', 
+  () => import('./src/@app.micro-vue/index.vue.js'),
+  (location) => location.pathname === "/" || location.pathname === "/vue" 
+);
 
 registerApplication(
   // Name of our single-spa application
@@ -6,21 +13,10 @@ registerApplication(
   // loadingFunction
   () => import('./src/@app.micro-react/index.react.js'),
   // activityFunction
-  (location) => location.pathname === "" || 
-    location.pathname === "/" || 
+  (location) =>
+    location.pathname === "/" ||
     location.pathname.startsWith('/react')
 );
 
-registerApplication(
-    // Name of our single-spa application
-    'vue',
-    // loadingFunction
-    () => import('./src/@app.micro-vue/index.vue.js'),
-    // activityFunction
-    (location) => location.pathname === "" || 
-      location.pathname === "/" || 
-      location.pathname.startsWith('/vue')
-  );
 
 start();
-triggerAppChange()

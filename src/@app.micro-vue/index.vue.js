@@ -6,7 +6,7 @@ const vueLifecycles = singleSpaVue({
   Vue,
   appOptions: {
     el: '#microservice-app-vue',
-    render: vueApp => vueApp(App)
+    render: r => r(App)
   } 
 });
 
