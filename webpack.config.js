@@ -34,6 +34,10 @@ module.exports = {
                 test: /\.vue$/,
                 loader: 'vue-loader'
             },
+            {
+                test: /\.jsx$/,
+                loader: 'babel-loader',
+            },
             { test: /\.tsx?$/, loader: "ts-loader" }
         ],
     },
@@ -45,7 +49,7 @@ module.exports = {
             vue: 'vue/dist/vue.js'
         },
         modules: [path.resolve(__dirname, 'node_modules')],
-        extensions: [".tsx", ".ts", ".js", ".vue"]
+        extensions: [".tsx", ".ts", ".js", ".vue", ".jsx"]
     },
     plugins: [
         // A webpack plugin to remove/clean the output folder before building

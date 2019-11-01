@@ -2,20 +2,23 @@
 import * as React from 'react'
 import { Provider } from 'react-redux';
 import store from '../redux/index.store';
-import RootApp from './pages/home/index.home';
 import { createGlobalStyle } from 'styled-components'
+import Test from './component/test.component'
 
 const AppProvider = () => (
-    <Provider store={store}>
-        <RootApp />
-        <GlobalStyle/>
-    </Provider>
+  <Provider store={store}>
+    <GlobalStyle />
+    <div style={{ marginTop: 100 }}>
+      <Test />
+    </div>
+  </Provider>
 );
 
 const GlobalStyle = createGlobalStyle`
   body{
-    margin: 0;
-    background-color: #0e2439;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,sans-serif;
+    font-size: 14px;
   }
 `
 

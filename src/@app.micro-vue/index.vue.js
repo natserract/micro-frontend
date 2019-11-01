@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import singleSpaVue from 'single-spa-vue';
-import App from './App.vue'
+import App from './App'
 
 const vueLifecycles = singleSpaVue({
   Vue,

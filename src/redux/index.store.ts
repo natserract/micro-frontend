@@ -6,6 +6,4 @@ const store = createStore(
     RootReducer
 )
 
-console.log(store.getState());
-
 export default store
