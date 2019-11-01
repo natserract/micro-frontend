@@ -20,7 +20,7 @@ export default {
 }
 
 const SearchLogo = styled.span`
-    color: #292929;
+    color: #222;
     text-transform: uppercase;
     font-size: 23px;
     font-weight: 500;

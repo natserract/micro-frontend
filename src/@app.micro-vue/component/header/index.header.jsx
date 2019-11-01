@@ -33,7 +33,7 @@ const HeaderContainer = styled.header`
     right: 0px;
     z-index: 200;
     height: 60px;
-    background: rgb(252, 252, 67);
+    background: rgb(245, 236, 66);
 `
 
 const HeaderWrapper = styled.div`
