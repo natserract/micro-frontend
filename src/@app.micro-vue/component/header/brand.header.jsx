@@ -7,11 +7,11 @@ export default {
     name: 'Brand Header',
     render() {
         return (
-            <a href="/" onClick={navigateToUrl}>
+            <div style={{ cursor: 'default' }}>
                 <SearchLogo>
-                    Missy
+                    <i class="fas fa-bullseye"></i> Missy
                 </SearchLogo>
-            </a>
+            </div>
         )
     },
     components: {
@@ -20,8 +20,12 @@ export default {
 }
 
 const SearchLogo = styled.span`
-    color: #222;
+    color: #fff;
     text-transform: uppercase;
     font-size: 23px;
     font-weight: 500;
+
+    &::selection{
+        background: transparent;
+    }
 `

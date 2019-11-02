@@ -10,9 +10,10 @@ export default {
             <HeaderContainer>
                 <HeaderWrapper>
                     <SearchSection>
-                        <Brand/>
-                        <SearchForm/>
-                        <p>Login | Sign Up </p>
+                        <Brand />
+                        <ButtonSearch>
+                            <SearchIcon class="fas fa-search"/>
+                        </ButtonSearch>
                     </SearchSection>
                 </HeaderWrapper>
             </HeaderContainer>
@@ -33,11 +34,10 @@ const HeaderContainer = styled.header`
     right: 0px;
     z-index: 200;
     height: 60px;
-    background: rgb(245, 236, 66);
 `
 
 const HeaderWrapper = styled.div`
-    max-width: 1110px;
+    max-width: 820px;
     width: 100%;
     display: flex;
     height: 60px;
@@ -46,6 +46,8 @@ const HeaderWrapper = styled.div`
     -webkit-box-pack: justify;
     justify-content: space-between;
     margin: 0px auto;
+    padding: 48px 16px;
+    color: #fff;
 `
 const SearchSection = styled.div`
     align-items: flex-start;
@@ -56,4 +58,17 @@ const SearchSection = styled.div`
     width: 100%;
     align-items: center;
 `
+const ButtonSearch = styled.div`
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+`
+const SearchIcon = styled.i`
+    color: #fff;
+    font-size: 20px;
+    transition: all .2s;
 
+    &:hover {
+        color: #e6375a;
+    }
+`
