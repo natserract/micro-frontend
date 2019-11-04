@@ -1,9 +1,10 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import LyricListsContent from './lyric.lists.content'
 
 const Content = () => (
     <ContentContainer>
-        Hello
+        <LyricListsContent />
     </ContentContainer>
 )
 
@@ -13,6 +14,8 @@ const ContentContainer = styled.div`
     width: 100%;
     margin: 0 auto;
     color: #fff;
+    margin-block-start: 15em;
 `
+
 
 export default Content

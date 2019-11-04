@@ -1,7 +1,8 @@
 
 import styled from 'vue-styled-components'
 import Brand from './brand.header'
-import SearchForm from './search.header'
+import SearchFilter from './search.input.header'
+import MenuHeader from './menu.header'
 
 export default {
     name: 'Header',
@@ -9,12 +10,15 @@ export default {
         return (
             <HeaderContainer>
                 <HeaderWrapper>
-                    <SearchSection>
+                    <HeaderMain>
                         <Brand />
-                        <ButtonSearch>
-                            <SearchIcon class="fas fa-search"/>
-                        </ButtonSearch>
-                    </SearchSection>
+                        <MenuHeader>asda</MenuHeader>
+                    </HeaderMain>
+                </HeaderWrapper>
+
+                {/* <!--- Search Filter --> */}
+                <HeaderWrapper>
+                    <SearchFilter />
                 </HeaderWrapper>
             </HeaderContainer>
         )
@@ -22,12 +26,12 @@ export default {
     components: {
         HeaderContainer,
         HeaderWrapper,
-        SearchSection,
+        HeaderMain,
     },
 }
 
 const HeaderContainer = styled.header`
-    position: fixed;
+    position: relative;
     width: 100%;
     top: 0px;
     left: 0px;
@@ -40,16 +44,19 @@ const HeaderWrapper = styled.div`
     max-width: 820px;
     width: 100%;
     display: flex;
-    height: 60px;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
     margin: 0px auto;
-    padding: 48px 16px;
     color: #fff;
+
+    &:first-child {
+        height: 60px;
+        padding: 48px 16px 20px;
+    }
 `
-const SearchSection = styled.div`
+const HeaderMain = styled.div`
     align-items: flex-start;
     display: flex;
     justify-content: space-between;
@@ -64,7 +71,7 @@ const ButtonSearch = styled.div`
     cursor: pointer;
 `
 const SearchIcon = styled.i`
-    color: #fff;
+    color: #e2e2e2;
     font-size: 20px;
     transition: all .2s;
 

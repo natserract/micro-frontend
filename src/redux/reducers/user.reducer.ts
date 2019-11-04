@@ -3,15 +3,18 @@ import { INCREMENT, DECREMENT, RESET } from '../action/action'
 interface State {
   count: number
 }
-type Action = { type: 'INCREMENT' } | { type: 'DECREMENT' } | { type: 'RESET' }
 
-const Counter = (state: State, action: Action) => {
+// Action reducer
+type Action = 
+  { type: 'INCREMENT' } | 
+  { type: 'DECREMENT' } | 
+  { type: 'RESET' };
+
+
+const Counter = (state = 0, action: Action) => {
   switch (action.type) {
     case 'INCREMENT':
-      return {
-        ...state,
-        count: state.count + 1
-      }
+      return state+1;
     default:
       return state
   }
