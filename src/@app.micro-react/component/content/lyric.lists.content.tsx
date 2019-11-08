@@ -1,5 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const LyricListsContent = () => (
     <LyricSectionPosts>
@@ -8,7 +9,7 @@ const LyricListsContent = () => (
                 <LikesIcon className="fas fa-thumbs-up"></LikesIcon>
                 <LikesCount>10</LikesCount>
             </EntryLikes>
-            <EntryLink>
+            <EntryLink to="detail">
                 <EntryLinkTitle>
                     Got our first paying customers!
                     </EntryLinkTitle>
@@ -64,7 +65,7 @@ const LikesCount = styled.span`
     cursor: pointer;
     color: #9cb3c9;
 `
-const EntryLink = styled.a`
+const EntryLink = styled(Link)`
     width: calc(100% - 44px - 8px - 16px);
     color: #9cb3c9;
     align-items: flex-start;

@@ -4,11 +4,12 @@ import { Provider } from 'react-redux';
 import store from '../redux/index.store';
 import { createGlobalStyle } from 'styled-components'
 import HomeContent from './component/content/index.content'
+import Routes from './routes/routes'
 
 const AppProvider = () => (
   <Provider store={store}>
     <GlobalStyle />
-    <HomeContent/>
+    <Routes/>
   </Provider>
 );
 
