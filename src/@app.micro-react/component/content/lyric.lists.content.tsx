@@ -9,7 +9,49 @@ const LyricListsContent = () => (
                 <LikesIcon className="fas fa-thumbs-up"></LikesIcon>
                 <LikesCount>10</LikesCount>
             </EntryLikes>
-            <EntryLink to="detail">
+            <EntryLink to="#">
+                <EntryLinkTitle>
+                    Got our first paying customers!
+                    </EntryLinkTitle>
+                <EntryLinkContent>
+                    Hey everyone! This is Allen from Stagelight.io, a company that's providing a "demo as a service" for SaaS websites and products. In the points below,
+            </EntryLinkContent>
+            </EntryLink>
+        </LyricLists>
+        <LyricLists>
+            <EntryLikes>
+                <LikesIcon className="fas fa-thumbs-up"></LikesIcon>
+                <LikesCount>10</LikesCount>
+            </EntryLikes>
+            <EntryLink to="#">
+                <EntryLinkTitle>
+                    Got our first paying customers!
+                    </EntryLinkTitle>
+                <EntryLinkContent>
+                    Hey everyone! This is Allen from Stagelight.io, a company that's providing a "demo as a service" for SaaS websites and products. In the points below,
+            </EntryLinkContent>
+            </EntryLink>
+        </LyricLists>
+        <LyricLists>
+            <EntryLikes>
+                <LikesIcon className="fas fa-thumbs-up"></LikesIcon>
+                <LikesCount>10</LikesCount>
+            </EntryLikes>
+            <EntryLink to="#">
+                <EntryLinkTitle>
+                    Got our first paying customers!
+                    </EntryLinkTitle>
+                <EntryLinkContent>
+                    Hey everyone! This is Allen from Stagelight.io, a company that's providing a "demo as a service" for SaaS websites and products. In the points below,
+            </EntryLinkContent>
+            </EntryLink>
+        </LyricLists>
+        <LyricLists>
+            <EntryLikes>
+                <LikesIcon className="fas fa-thumbs-up"></LikesIcon>
+                <LikesCount>10</LikesCount>
+            </EntryLikes>
+            <EntryLink to="#">
                 <EntryLinkTitle>
                     Got our first paying customers!
                     </EntryLinkTitle>

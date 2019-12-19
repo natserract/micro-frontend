@@ -5,9 +5,7 @@ import styled from 'vue-styled-components'
 export default {
     render() {
         return (
-            <ButtonAdd>
-                Add New
-            </ButtonAdd>
+            <ButtonAdd>Add New</ButtonAdd>
         )
     },
     components: {

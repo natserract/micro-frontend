@@ -26,7 +26,7 @@ export default {
     components: {
         HeaderContainer,
         HeaderWrapper,
-        HeaderMain,
+        HeaderMain
     },
 }
 
