@@ -11,6 +11,10 @@ You can find the single-spa documentation [on the website](https://single-spa.js
 
 Check out the [Getting Started](https://single-spa.js.org/docs/getting-started-overview.html) page for a quick overview.
 
-## Demo and examples
+## Installation and setup
 
-Please see the [examples page](https://single-spa.js.org/docs/examples.html) on the website.
+1. Clone the repo
+2. Run `npm install`
+3. run `npm start`
+4. Open running code at `http://localhost:8080/`
+
