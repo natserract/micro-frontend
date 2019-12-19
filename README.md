@@ -18,3 +18,13 @@ Check out the [Getting Started](https://single-spa.js.org/docs/getting-started-o
 3. run `npm start`
 4. Open running code at `http://localhost:8080/`
 
+## Demo App
+<p align="center">
+  <img src="https://github.com/alfinsuryaS/Micro-FE/blob/master/src/assets/image/demo-app2.png" alt="demo-app"/>
+ </p>
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
