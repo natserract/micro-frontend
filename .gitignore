@@ -1,3 +1,7 @@
 # Local Netlify folder
 .netlify
 .toml
+
+/node_modules
+
+.DS_Store
